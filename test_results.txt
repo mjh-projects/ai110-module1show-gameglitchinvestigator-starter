@@ -1,0 +1,20 @@
+# Test run: 2026-06-21
+# Command: python -m pytest tests/test_game_logic.py -v
+# Focus: regression coverage for the "New Game" bug (new_game_state) plus
+#        existing check_guess hint tests.
+
+============================= test session starts =============================
+platform win32 -- Python 3.14.5, pytest-9.0.3, pluggy-1.6.0 -- C:\Python314\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\medit\codepath\Lesson3\ai110-module1show-gameglitchinvestigator-starter
+plugins: anyio-4.13.0
+collecting ... collected 6 items
+
+tests/test_game_logic.py::test_winning_guess PASSED                      [ 16%]
+tests/test_game_logic.py::test_guess_too_high PASSED                     [ 33%]
+tests/test_game_logic.py::test_guess_too_low PASSED                      [ 50%]
+tests/test_game_logic.py::test_hint_uses_numeric_not_string_comparison PASSED [ 66%]
+tests/test_game_logic.py::test_new_game_fully_resets_state PASSED        [ 83%]
+tests/test_game_logic.py::test_new_game_uses_difficulty_range_secret PASSED [100%]
+
+============================== 6 passed in 0.07s ==============================
